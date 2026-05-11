@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 10%;
+  background: #222;
+}
+
+.logo {
+  color: cyan;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+  height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+.hero p {
+  font-size: 24px;
+  color: cyan;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+
+  border: none;
+  background: cyan;
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+/* Sections */
+
+section {
+  padding: 80px 10%;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+/* Skills */
+
+.skills-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Projects */
+
+.project-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .skills-container,
+  .project-container {
+    flex-direction: column;
+  }
+
+}
